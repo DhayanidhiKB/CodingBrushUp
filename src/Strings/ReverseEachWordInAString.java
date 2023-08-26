@@ -4,8 +4,8 @@ public class ReverseEachWordInAString {
 
     public static void main(String[] args) {
 
-        String word="Java-Programming-Selenium";
-        String[] splitted=word.split("-");
+        String word="Java Programming Selenium";
+        String[] splitted=word.split("\\s");
         String actualReversedString="";
         for (String s:splitted){
             String reversed="";

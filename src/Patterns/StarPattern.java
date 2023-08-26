@@ -5,7 +5,7 @@ public class StarPattern {
     //Star Triangle Pattern
      public static void main(String[] args){
      StarPattern starPattern=new StarPattern();
-    // starPattern.starPattern();
+     starPattern.starPattern();
      starPattern.invertedStarPattern();
 
      }

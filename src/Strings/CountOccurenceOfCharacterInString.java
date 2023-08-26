@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class CountOccurenceOfCharacterInString {
 
     public static void main(String [] args){
-        String s="PraveenDhayanidhi";
+        String s="aabbcc";
         char[] EverySinglecharfromWord=s.toCharArray(); //Coverts the string to individual character
 
         HashMap<Character,Integer> charcountMap=new HashMap<>();

@@ -14,15 +14,12 @@ public class RemoveVowlesFromString {
         for(int i=0;i < c.length;i++){
             if(c[i]=='a'|| c[i]=='e'|| c[i]=='i'||c[i]=='o'||c[i]=='u'){
                 result1=c[i];
-                System.out.println("With vowel"+result1);
+                //System.out.print("With vowel :"+result1);
 
             }
-
-
-
             else{
                 notVowel=c[i];
-                System.out.println(notVowel);
+                System.out.println("Without vowel :"+notVowel);
             }
         }
 

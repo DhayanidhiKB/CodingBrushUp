@@ -11,17 +11,17 @@ public class SumOfElementsInArray {
        int array[]={5,2,3,7,8};
        int sum = 0;
 
-       //Using for Loop
-      /* for (int i=0;i<a.length-1;i++){
-         sum=sum+a[i];
+    /*   //Using for Loop
+       for (int i=0;i<array.length;i++){
+         sum=sum+array[i];
        }
        System.out.println("Sum of elements in array from for Loop "+sum);*/
 
        //Using forEach Loop
-      /*  for(int i:array){
+        for(int i:array){
             sum=sum+i;
         }
-        System.out.println("Sum of elements in array from for Each Loop "+sum);*/
+        System.out.println("Sum of elements in array from for Each Loop "+sum);
 
         //using streams
         List<Integer> integers = Arrays.asList(1, 2, 3, 4, 5);
