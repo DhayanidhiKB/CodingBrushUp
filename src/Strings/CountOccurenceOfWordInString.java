@@ -3,9 +3,12 @@ package Strings;
 import java.util.HashMap;
 import java.util.Map;
 
+
 public class CountOccurenceOfWordInString {
 
     public static void main(String[] args){
+
+
 
         String s="Java-Program-Java-Program-Selenium";
         String[] eachWord=s.split("-");

@@ -1,34 +1,28 @@
 package Strings;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class DuplicateCharacterInAString {
 
     public static void main(String[] args) {
-        String actualWord = "Dhayanidhi";
+        String actualWord = "praveen";
+        String removeduplicate="";
         char[] eachChar=actualWord.toCharArray();
 
-        HashMap<Character,Integer> occurence=new HashMap<>();
+        Set<Character> letterSet=new HashSet<>();
 
-        for(char singleletter:eachChar){
-            if(occurence.containsKey(singleletter)){
-                occurence.put(singleletter,occurence.get(singleletter)+1);
-            }
-            else{
-                occurence.put(singleletter,1);
+        for(int i=0;i< eachChar.length;i++){
+            if(!letterSet.add(eachChar[i])){
+                removeduplicate+=eachChar[i];
             }
         }
+        //System.out.println("Given word after removing duplicate :"+removeduplicate);//letterSet.add(eachChar[i])
+        System.out.println("duplicate character in string is :"+removeduplicate);//!letterSet.add(eachChar[i])
 
-        for (Map.Entry<Character, Integer> entry :
-                occurence.entrySet()) {
+        //letterSet.add(eachChar[i])---removes one of duplicate character and prints the string with other duplicate character
+        //!letterSet.add(eachChar[i])--Prints duplicate character alone
 
-            if (entry.getValue() == 1) {
-                System.out.println(entry.getKey()
-                        + " : "
-                        );
-            }
-
-        }
     }
 }
+
+
